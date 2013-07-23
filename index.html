@@ -1,0 +1,777 @@
+
+/*@charset "UTF-8";
+
+/* browser reset */
+
+@media all {
+
+  /* Global reset of paddings and margins for all HTML elements */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	/* Correction:margin/padding reset caused too small select boxes. */
+	option {
+		padding-left:0.4em;
+	} /* LTR */
+
+	select {
+		padding:1px;
+	}
+
+	/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+	* html body * {
+		overflow:visible;
+	}
+
+	body {
+		font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+		background:#fff;
+		color:#000;
+		text-align:left; /* LTR */
+		line-height: 1;
+	}
+
+	/* avoid visible outlines on DIV containers in Webkit browsers */
+	div {
+		outline:0 none;
+	}
+
+	/* HTML 5 - adjusting visual formatting model to block level */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	/* Hide number or bullet in lists */
+	ol, ul {
+		list-style: none;
+	}
+
+	/* Clear borders for <fieldset> and <img> elements */
+	fieldset, img {
+		border:0 solid;
+	}
+
+	/* hide quotes */
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	/* table fix collapse and spacing */
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	/* Clear borders/outline for links when you click */
+	a:active {
+	 border:0 none;
+	 outline:0 none;
+	}
+
+}
+
+@media print {
+
+	.noprint {
+		display:none !important;
+	}
+
+}
+
+html ,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+ margin 				:0;
+  padding 				:0;
+ }
+table {
+ border-collapse		:collapse;
+  border-spacing		:0; 
+}
+fieldset, img {
+ border 				:0; 
+}
+ul {
+ list-style 			:none; 
+}
+input
+ { border 				: none;
+  height 				: 18px;
+  }
+a{ 
+	text-decoration		: none; 
+	outline				:none;
+}
+.clear {
+ clear					: both; 
+}
+img {
+ border 				:none;
+  }
+  /*~ ><> <>< ~~ ~~~ ~ <>< <>< ~ ~ ~ ><> ~~~ ><>FONTS><> ~~ ~ ~ ><> ><> ~ <>< ~~ ~~~~ ~ ><> ><> ~~ ~ ><> ~*/
+  @font-face{
+  	font-style			:normal;
+	font-weight			:normal;
+  	font-family			: 'yekan';
+  	src 				:url('font/yekan.eot');
+  	src 				:url('font/yekan.eot?#iefix') format('embedded-opentype'),
+						url('font/yekan.woff') format('woff'),
+						url('font/yekan.ttf') format('truetype');
+  }
+   @font-face{
+   	font-style			:normal;
+	font-weight			:normal;
+	font-family			: 'mitra';
+	src 				:url('font/mitra.eot');
+  	src 				:url('font/mitra.eot?#iefix') format('embedded-opentype'),
+						url('font/mitra.woff') format('woff'),
+						url('font/mitra.ttf') format('truetype');
+   }
+/*><> ~~ ~ ><> ~~ ~ ><> <>< ~~ ~><> <>< ~~~ ~><> MAINSLIDER ~~ ~ ><> ><> <>< ~~~ ~ ><> ~ ~ ><> <>< ~~*/
+.theme-default #slider {
+    margin 				:0px auto 0 auto;
+    width				:878px; /* Make sure your images are the same size */
+    height 				:246px; /* Make sure your images are the same size */
+    float 				: left;
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top			:150px;
+}
+
+.clear {
+	clear				:both;
+}
+/*><> ~~ ><> ~~~ ~~ ><> ~ ><> ~~ ><> ~~~ ~~~ ><> ~ SLIDER2  ><> ><> ~~ ~~ ~  ><> <>< ~~ ~ ><> ~ */
+div.slider2{
+	background-image	: url('./images/draw.jpg');
+}
+
+div.slider2 div.lnews{
+	width				: 130px;
+	font-family			: 'yekan';
+	margin-right		: 10px;
+	font-size			: 17px;
+	line-height			: 80px;
+	color 				: #82ac54;
+	float				: right;
+}
+
+.newsticker{
+	width				: 670px;
+	height 				: 80px;
+	overflow			: hidden;
+	position 			: relative;
+	float				: right;
+}
+
+.trainer{
+	width: 9999px;
+	height: 80px;
+	position: absolute;
+}
+
+.trainer li{
+	float: left;
+	width: 670px;
+	height: 80px;
+	display: block;
+	font-family: mitra;
+}
+
+.trainer li a{
+	text-decoration: none;
+	color: #aaa;
+	line-height: 80px;
+	white-space: nowrap;
+	float: right;
+	margin-right: 10px;
+}
+
+.buttons{
+	width: 50px;
+	min-height: 20px;
+	margin-right: auto;
+	padding-top: 25px;
+}
+
+
+.prev{
+	width				: 20px;
+	height 				: 30px;
+	background 			: url('images/bluearrow2.png');
+	background-position : 0 0;
+	float				: right;
+	cursor				: pointer;
+}
+
+.next{
+	width				: 20px;
+	height 				: 30px;
+	background 			: url('images/bluearrow2.png');
+	background-position: -20px 0;
+	float				: right;
+	cursor				: pointer;
+}
+/*><> ~~ ~ ><> ><> ~~ ~~~ ><> ~~ ~ ><> ~~~SLIDER3 ><> ~~~ ><> ~~ ~ ><> ~~><> <>< ~~~ ~ */
+div.slidefloors{
+	margin 				: 0 auto;
+	height 				: 240px;
+}
+div.slider3{
+	direction: ltr;
+	position 			: relative;
+	height 				: 230px;
+	width				: 878px;
+	margin-top			: 17px;
+}
+div.slider3 div.arrow1{
+	background-image	: url('images/arrows.png');
+	background-repeat	: no-repeat;
+	position 			: absolute;
+	width				: 34px;
+	height 				: 63px;
+	background-position	: -34px -2px;
+	right 				: -60px;
+	margin-top			: 80px;
+	cursor: pointer;
+}
+div.slider3 div.arrow2{
+	background-image	: url('images/arrows.png');
+	background-repeat	: no-repeat;
+	position 			: absolute;
+	width				: 34px;
+	height 				: 63px;
+	left 				: -60px;
+	margin-top			: 80px;
+	cursor: pointer;
+}
+div.slider3 ul li{
+	float				:left;
+	/*margin-left			:23px;*/
+	width				:200px;
+	height 				:220px;
+	background-image	: url('images/shadow4.png');
+	box-shadow 			: 0px 0px 9px #ccc,0 5px 10px -3px #BBB;
+	margin 				: 10px 10px;
+}
+div.slider3 ul li img{
+	float				:right;
+}
+div.slidefloors ul li div.li1div1,
+div.slidefloors ul li div.li2div1,
+div.slidefloors ul li div.li3div1,
+div.slidefloors ul li div.li4div1{
+	background-color	:#e4e4e4;
+	height 				:40px;
+	width				:200px;
+	float				:left;
+}
+div.slidefloors ul li div.li1div2,
+div.slidefloors ul li div.li2div2,
+div.slidefloors ul li div.li3div2,
+div.slidefloors ul li div.li4div2{
+	background-color	:#fff;
+	height 				:50px;
+	width				:200px;
+	float				:left;
+	box-shadow			: 0px 1px 10px #ccc;
+}
+ul li div.li1div1 p,
+ul li div.li2div1 p,
+ul li div.li3div1 p,
+ul li div.li4div1 p{
+	color 				:#82ac54;
+	font-family			:'yekan';
+	font-size			:17px;
+	text-align			:center;
+	line-height			:41px; 
+	text-shadow			:1px 1px #fff;
+}
+ul li div.li1div2 p,
+ul li div.li2div2 p,
+ul li div.li3div2 p,
+ul li div.li4div2 p{
+	color 				:#787878;
+	font-size			:17px;
+	font-family			:'yekan';
+	text-align			:center;
+	line-height			:51px; 
+}
+/*><> ~~ ><> ~~ ~~~ ~ ><> <>< ~~~ ~ ><> ~ ~ ><> ~~~ BODY~~~ ><> ><> ~~~ ~~ ~~ ><> <>< ~~ ><> ><> ~~*/
+
+body{
+	background 			: url('images/Untitled-1.jpg') repeat;
+	min-height			: 900px;
+}
+div.backimg{
+	background-image	: url('images/bmslider.png');
+	background-repeat	: no-repeat;
+	width				: 100%;
+	height 				: 744px;
+	position 			: absolute;
+	z-index				: 0;
+	background-position	: center top;
+	background-size		: cover;
+	zoom				:1;
+}
+div.shadow1{
+	background-image	: url('images/shadow3.png');
+	background-repeat	: no-repeat;
+	width				: 988px;
+	height 				: 58px;
+	position 			: absolute;
+	z-index 			:-10;
+	bottom 				: -5px;
+	left 				: -56px;
+}
+div.shadow2{
+	background-image	: url('images/shadow.png');
+	background-repeat	: no-repeat;
+	width				: 939px;
+	height 				: 59px;
+	position 			: absolute;
+	z-index				: 0;
+	bottom 				: -33px;
+	left 				: 205px;
+}
+div.container{
+	margin-right		: auto;
+	margin-left			: auto;
+	margin-bottom		: 0;
+	margin-top			: 0;
+	width				: 878px;
+	position 			: relative;
+	z-index				: 1;
+}
+div.container div#wrapper{
+	height 				: 380px;
+}
+div.container div.maintext{
+	width				: 878px;
+	height 				: 267px;
+	background-color 	: #f8f8f8;
+	position 			:relative;
+}
+div.container div.maintext div.text{
+	float				: left;
+	margin-left			:40px;
+	width				: 610px;
+	height 				: 267px;
+	margin-top			: 25px;
+	text-align			:justify;
+}
+div.container div.maintext div.text p{
+	font-family			:'mitra';
+	font-size			:16px;
+	color 				:#575757;
+	line-height			:25px; 
+}
+div.text span.greentext{
+	color 				:#9ab57d;
+}
+div.container div.maintext div.rightlinks{
+	margin-left			: auto;
+	height 				: 267px;
+	width				:200px;
+}
+div.maintext div.rightlinks li{
+	list-style-type		: none;
+}
+div.rightlinks div.modern-hoshmand{
+	background-image	: url('images/oxin_logo.png');
+	width				:137px;
+	height 				:68px;
+	padding 			: 1px;
+	float				:left;
+	margin-top			: 25px;
+}
+div.rightlinks div.modern-hoshmand p{
+	display				: block;
+	margin-top			:70px;
+	margin-right		: 9px;
+	font-family			:'yekan';
+	color 				: #909090;
+	font-size			:20px;
+}
+div.rightlinks li:first-child{
+	float				: left;
+	margin-top			: 50px;
+}
+div.rightlinks li{
+	float				: left;
+	margin-top			: 7px;
+}
+div.rightlinks li a{
+	display				: block;
+	width				: 138px;
+	height 				: 25px;
+	background-color	: #adca8e;
+	text-align			: center;
+	color 				: #fff;
+	font-family			:'yekan';
+	font-size			:17px;
+	padding-top 		: 10px;
+}
+div.slider2{
+	height 				: 84px;
+	width				: 878px;
+	margin-top			: 27px;
+}
+div.linkbox{
+	width				: 100%;
+	height 				: 263px;
+	float				: left;
+	background-color	: #fbfbfb;
+	box-shadow			: 0px -5px 15px #ccc;
+	margin-top			:40px;
+}
+div.linkbox div.lb{
+	width				: 878px;
+	height 				: 176px;
+	margin-top			: 44px;
+	margin-left			: auto;
+	margin-right		: auto;
+}
+div.lb div.oxinconection{
+	border-right		: 1px #cccdcb solid;
+	float				: left;
+	width				: 195px;
+	height 				: 176px;
+}
+div.lb div.oxinconection p.oxc{
+	margin-right		: 48px;
+}
+div.lb div.usefullink p.usl{
+	margin-right		: 60px;
+}
+div.lb div.oxinconection p.oxc,
+div.lb div.usefullink p.usl{
+	color 				: #94c591;
+	text-align			: right;
+	margin-top			: 17px;
+	display				: block;
+	font-family			:'yekan';
+	font-size			:13px;
+	font-weight			:normal !important;
+
+}
+div.lb div.oxinconection p{
+
+	margin-right		: 48px;
+}
+div.lb div.usefullink p{
+	margin-right		: 60px;
+}
+div.lb div.oxinconection p{
+	text-align			: right;
+	color 				: #787878;
+	display				: block;
+	font-family			:'mitra';
+	font-size			:19px;
+	line-height			: 26px;
+}
+div.lb div.usefullink p a{
+	text-align			: right;
+	color 				: #787878;
+	display				: block;
+	font-family			:'mitra';
+	font-size			:16.02px;
+	line-height			: 26px;
+}
+div.lb div.oxinconection p.finfo,
+div.lb div.usefullink  p.usfl{
+	margin-top			: 10px;
+}
+div.lb div.rlnews{
+	border-right		: 1px solid #cccdcb;
+	float				: left;
+	width				: 255px;
+	height 				: 176px;
+}
+div.lb div.rlnews div.envelop{
+	background-image	: url('images/mail.png');
+	width				: 67px;
+	height 				: 60px;
+	margin-top			: 17px;
+	margin-right		: auto;
+	margin-left			: auto;
+}
+div.lb div.rlnews p{
+	text-align			: center;
+	color 				: #787878;
+	margin-top			: 16px;
+	display				: block;
+	font-family			:'yekan';
+	font-size			:12.5px;
+}
+div.lb div.worktime p{
+	text-align			: center;
+	margin-top			: 5px;
+	color 				: #787878;
+	font-size			:16.33px;
+	font-family 		:'yekan';
+}
+div.lb div.worktime p.dcolor{
+	color 				: #b5b7b4 ; 
+	margin-top			: 16px;
+	font-family			:'yekan';
+	font-size			:16.33px;
+}
+div.lb div.rlnews div.mailbox{
+	width				: 200px;
+	height 				: 30px;
+	border 				: #b8d3b6 solid 1px;
+	display				: block;
+	margin-right		: auto;
+	margin-left			: auto;
+	margin-top			: 15px;
+}
+div.rlnews div.mailbox input.mtbox{
+	background-image	: url('images/mail_textbox.png');
+	background-repeat	: no-repeat;
+	float				: right;
+	width				: 30px;
+	height 				: 30px;
+	background-color	: white;
+	background-position	: center;
+	cursor				: pointer;
+}
+div.rlnews div.mailbox input.tmtbox{
+	float				: right;
+	width				: 150px;
+	height 				: 30px;
+	padding 			: 0 10px;
+	text-align			: right;
+}
+div.lb div.usefullink{
+	border-right		: 1px #cccdcb solid;
+	float				: left;
+	width				: 255px;
+	height 				: 176px;
+}
+div.worktime{
+	margin-left			: 705px;
+	height 				: 176px;
+}
+div.worktime div.clockph{
+	background-image	: url('images/clock.png');
+	background-repeat	: no-repeat;
+	margin-left			: auto;
+	margin-right		: auto;
+	width				: 75px;
+	height 				: 75px;
+	margin-top			: 17px;
+
+}
+/*><> ~~~ ><> ~~ ><> ><> ~ ~ ~~ ><> <>< ~~ ~ HEADER ~~><> ~~ ><> ~~ ~~~ ><> ><> ~~~ ><> */
+div.container div.wtop{
+	height 				: 58px;
+	background-color	: #fff;
+	margin-top			: -43px;
+	margin-right		: auto;
+	margin-left			: auto;
+	width				: 878px;
+}
+div.head{
+	height 				: 111px;
+	padding 			: 1px;
+}
+div.head div.logo{
+	background-image	: url('images/oxin-logo.png');
+	width				: 222px;
+	height 				: 33px;
+	float 				: right;
+	margin-top			: 64px;
+
+}
+div.searchbox form input{
+	float				: left;
+}
+div.searchbox form input.textinput{
+	color 				:green;
+	width				: 200px;
+	height 				: 33px;
+	float 				: right;
+	text-align			: right;
+	padding 			: 0 10px;
+	font-family			:'tahoma'; 
+}	
+::-webkit-input-placeholder{
+	color 				: #82ac54;
+	text-align			: right;
+}
+::-moz-placeholder {
+ 	color 				:#82ac54; 
+	text-align			: right;
+
+}
+  /* firefox 19+ */
+:-ms-input-placeholder {
+ 	color 				:#82ac54;
+	text-align			: right;
+  } /* ie */
+input:-moz-placeholder {
+ color 					:#82ac54;
+  }
+
+div.searchbox{
+	width				: 275px;
+	height 				: 33px;
+	float				: left;
+	margin-top			: 64px;
+	overflow			: hidden;
+	border 				: 1px solid #82ac54;
+	background-color	: #fff;
+}
+div.searchbox form input.imginput{
+	background-image	: url('images/search.png');
+	background-repeat	: no-repeat;
+	width				: 30px;
+	height 				: 33px;
+	float				: left;
+	background-color	: white;
+	background-position	: center;
+	cursor				: pointer;
+	margin-left		: 5px;
+}
+
+/*><> ~~ ><> ><> ~~~ ~~ ~~ ><> ~~ ><> <>< ~ MENU ~~~ ><> ><> ~~~ ~ ><> ><> ~~ ~~~~ ><> */
+nav menu,
+footer ul{
+	list-style-type		: none;
+	margin-top: 0;	
+}
+nav{
+	float				:right;
+
+}
+.top .menu{
+	width: 700px;
+}
+nav menu{
+	padding 			:0;
+}
+div.top{
+	background-image	: url('images/draw.jpg');
+	width				: 878px;
+	height 				: 58px;
+}
+div.blueimg{
+	background-image	: url('images/line-gradient.png');
+	width				: 881px;
+	height 				: 2px;
+	float				: left;
+	margin-left			: auto;
+	margin-right		: auto;
+}
+nav li,
+footer ul li{
+	float				: right;
+	line-height			: 29px;
+}
+nav a
+{
+	text-decoration		: none;
+	display				: block;
+	padding-right		: 22px;
+	color 				: #787878;
+	font-family			:'yekan';
+}
+
+div.last a{
+	color 				: #82ac54;
+	display				:block;
+	background-image	:url('images/photo.png');
+	background-repeat	:no-repeat;
+	font-family			:'yekan';
+	padding-right		:30px;
+	background-position	:right;
+	height: 24px;
+	line-height: 25px;
+}
+div.top div.last{
+	float				: left;
+	margin-left			: 25px;
+}
+nav a:hover{
+	color 				: #82ac54;
+}
+div.badboy{
+	width				: 0;
+	height 				: 0;
+	clear				: both;
+}
+div.top div.shadow5{
+	width				: 458px;
+	height 				: 16px;
+	background-image	: url('images/mshadow.png');
+	background-repeat	: no-repeat;
+	background-position	: center;
+	margin-left			:25%;
+	float: left; 
+}
+/*><> ><> ~~ ~~ ~ ><> ><> ~~~ <>< ~~ ><> FOOTER ><> ><> ~~ ~~~ ~ ><> ><> ~~~ ~ <>< ><> ~~~`*/
+body footer{
+	width				:100%;
+	height 				:49px;
+	float 				:left;
+	background-image	:url('images/footer.png');
+	box-shadow			: 0px -5px 15px #ccc;
+}
+div.white{
+	background-color	:#fbfbfb;
+	width				:100%;
+	height 				:17px;
+	float				:left;
+}
+footer div.foot{
+	width				:878px;
+	margin-right		:auto;
+	margin-left			:auto;
+	margin-top			:10px;
+}
+footer div.gweb{
+	margin-right		:auto;
+	width				:205px;
+	font-family			:'yekan';
+	font-size			:14px;
+	color 				:#bbbdbb;
+}
+footer div.foot div.foot2{
+	width				:655px;
+	float				:right;
+}
+footer ul{
+	padding 			:0;
+}
+footer ul li a{
+	display				:block;
+	float				:right;
+	padding-right		:20px;
+	font-family			:'yekan';
+	font-size			:14px;
+	color 				:#bbbdbb;
+}
