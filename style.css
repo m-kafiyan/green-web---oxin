@@ -1,0 +1,196 @@
+<!Doctype html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>مجتمع تجاری اکسین</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="backimg">
+        <div class="shadow2"></div>
+    </div>
+    <div class="container">
+        <div class="wtop"></div>
+        <div class="head">
+            <a href="#"><div class="logo"></div></a>
+            <div class="searchbox">
+                 <form>
+                     <input type="text" class="textinput" placeholder="جستجو...">
+                     <input type="submit" class="imginput" value="">
+                </form>         
+            </div>
+        </div>
+        <div class="blueimg"></div>
+        <div class="top">
+        <div class="shadow5"></div>
+            <nav>
+                <menu>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">تشریح پروژه</a></li>
+                    <li><a href="#">مراحل ساخت</a></li>
+                    <li><a href="#">مشخصات پروژه</a></li>
+                    <li><a href="#">راهنمای طبقات</a></li>
+                    <li><a href="#">اخبار</a></li>
+                    <li><a href="#">اطلاعات تماس</a></li>
+                </menu> 
+                <div class="badboy"></div>
+            </nav>
+            <div class="last"><a class="camera" href="#">دوربین زنده</a></div>
+        </div>        
+        <!-- MAIN SLIdDER!-->
+        <div id="wrapper">
+            
+             <div class="slider-wrapper theme-default">
+                   
+                 <div id="slider" class="nivoSlider">
+                      <img src="images/slider.jpg" alt="" />
+                        <img src="images/slider.jpg" alt=""  />
+                     <img src="images/slider.jpg" alt="" />
+                     <img src="images/slider.jpg" alt=""/>
+                </div>
+            </div>
+         </div>
+        <div class="maintext">
+            <div class="text">
+                    <p><span class="greentext">مجتمع تجاری اکسین</span> با 24000 متر مربع زیربنا در ده طبقه در زمینی به مساحت 2565 متر احداث می گردد. معماری به کار رفته نمایی مدرن و زیبایی از مجتمع در اختیار در اختیار عموم قرار داده است. خطوط مورب و کشیده در ترکیب نما حس یکپارچگی و شکوه را در مخاطب ایجاد کرده. درب اصلی مجتمع کاملا در نبش چهارراه قرار خواهد گرفت. تجمع و رفت و آمد مراجعه کنندگان که توسط رمپ و پله های متعدد برقی انجام می گیرد. روح فعال و سرزنده مجتمع در منظر عابرین و فضای باز در پشت قرار دارد. کل طبقات حتی طبقه 1 دارای نور و تهویه عالی خواهد بود.سه دستگاه آسانسور زیبای نفربر در ضلع جنوبی غرب و نیز دو دستگاه آسانسور پانوراما و ده عدد پله برقی در داخل مجتمع وظیفه انتقال مستقیم مراجعه کنندگان به طبقات بالای مجتمع را بر عهده دارند.
+                    </p>
+            </div>
+            <div class="rightlinks">
+                <div class="modern-hoshmand">
+                    <p>مدرن و هوشمند</p>      
+                </div>
+                <div class="glinks">
+                    <li><a href="#">تور مجازی</a></li>
+                    <li><a href="#">دانلود کاتالوگ</a></li>
+                </div>
+            </div>
+            <div class="shadow1"></div>
+        </div>
+        <div class="slider2">
+                <div class="lnews">آخرین خبرها ::::</div>
+                <div class="newsticker">
+                    <ul class="trainer">
+                        <li>
+                            <a href="" title="">ده عدد پله برقی در داخل مجتمع وظیفه ی انتقال مستقیم مراجعه کنندگان به طبقات بالای مجتمع را بر عهده دارند.</a>
+                        </li>
+                        <li>
+                            <a href="" title="">ده عدد پله برقی در داخل مجتمع وظیفه ی انتقال مستقیم مراجعه کنندگان به طبقات بالای مجتمع را بر عهده دارند.</a>
+                        </li>
+                        <li>
+                            <a href="" title="">ده عدد پله برقی در داخل مجتمع وظیفه ی انتقال مستقیم مراجعه کنندگان به طبقات بالای مجتمع را بر عهده دارند.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <div class="next"></div>
+                    <div class="prev"></div>
+                </div>
+        </div>
+        <div class="slider3">
+            <div class="arrow1"> </div>
+            <div class="arrow2"> </div>
+            <div class="slidefloors">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/1.jpg" />
+                            <div class="li1div1"><p>طبقه ی 1-</p></div>
+                            <div class="li1div2"><p>طلا و جواهرات و عتیقه جات</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/2.jpg" />
+                            <div class="li2div1"><p>طبقه ی همکف</p></div>
+                            <div class="li2div2"><p>طلا و جواهرات و عتیقه جات</p></div>
+                        </a>            
+                     </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/3.jpg" />
+                            <div class="li3div1"><p>طبقه ی 1+</p></div>
+                            <div class="li3div2"><p>طلا و جواهرات و عتیقه جات</p></div>
+                        </a>
+                     </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/4.jpg" />
+                            <div class="li4div1"><p>طبقه ی 2+</p></div>
+                            <div class="li4div2"><p>طلا و جواهرات و عتیقه جات</p></div> 
+                        </a>           
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div class="linkbox">
+        <div class="lb">
+            <div class="oxinconection">
+                <p class="oxc">ارتباط با اکسین</p>
+                <p class="finfo">دفتر فروش:</p>
+                <p>31 و 6638430(0511)</p>
+                <p>مشهد-چهارراه مخابرات</p>
+                <p>www.oxin.com</p>
+            </div>
+            <div class="rlnews">
+                <div class="envelop"></div>
+                <p>دریافت آخرین اخبار در ایمیل شما</p>
+                <div class="mailbox">
+                    <form>
+                        <input type="text" class="tmtbox" value=""></input>
+                        <input type="submit" class="mtbox" value="">
+                    </form>
+                </div>
+            </div>
+            <div class="usefullink">
+                <p class="usl">لینک های مفید</p>
+                <p class="usfl"><a href="#">مسیر یابی اتوبوس مشهد</a></p>
+                <p><a href="#">تقویم شمسی</a></p>
+                <p><a href="#">پخش زنده حرم</a></p>
+                <p><a href="#">پارک ساحلی آفتاب</a></p>
+                <p><a href="#"> شارژ تلفن همراه</a></p>
+            </div>
+            <div class="worktime">
+                <div class="clockph"></div>
+                <p class="dcolor">ساعت کاری</p>
+                <p>9صبح تا 23 شب</p>
+            </div>
+        </div>    
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot2"> 
+                <ul>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">تشریح پروژه</a></li>
+                    <li><a href="#">راهنمای طبقات</a></li>
+                    <li><a href="#">خبرها و اطلاعیه</a></li>
+                    <li><a href="#">اطلاعات تماس</a></li>
+                </ul>
+            </div>    
+            <div class="gweb">طراحی و بهینه سازی توسط گرین وب</div>
+        </div> 
+    </footer>
+    <div class="white"></div>
+   <script type="text/javascript">
+            jQuery(function() {
+                jQuery(".slidefloors").jCarouselLite({
+                      auto: false,
+                      speed: 1000,
+                      btnNext: ".arrow1",
+                      btnPrev: ".arrow2",
+                      visible: 4,
+                      scroll: 1
+                });
+
+            });
+    </script>
+</body>
+</html>
