@@ -1,4 +1,5 @@
 
+
 /*@charset "UTF-8";
 
 /* browser reset */
@@ -31,7 +32,7 @@
 	option {
 		padding-left:0.4em;
 	} /* LTR */
-
+*{outline: none;}
 	select {
 		padding:1px;
 	}
@@ -130,7 +131,7 @@ a{
 img {
  border 				:none;
   }
-  /*~ ><> <>< ~~ ~~~ ~ <>< <>< ~ ~ ~ ><> ~~~ ><>FONTS><> ~~ ~ ~ ><> ><> ~ <>< ~~ ~~~~ ~ ><> ><> ~~ ~ ><> ~*/
+ /*~ ><> <>< ~~ ~~~ ~ <>< <>< ~ ~ ~ ><> ~~~ ><>FONTS><> ~~ ~ ~ ><> ><> ~ <>< ~~ ~~~~ ~ ><> ><> ~~ ~ ><> ~*/
   @font-face{
   	font-style			:normal;
 	font-weight			:normal;
@@ -149,22 +150,7 @@ img {
 						url('font/mitra.woff') format('woff'),
 						url('font/mitra.ttf') format('truetype');
    }
-/*><> ~~ ~ ><> ~~ ~ ><> <>< ~~ ~><> <>< ~~~ ~><> MAINSLIDER ~~ ~ ><> ><> <>< ~~~ ~ ><> ~ ~ ><> <>< ~~*/
-.theme-default #slider {
-    margin 				:0px auto 0 auto;
-    width				:878px; /* Make sure your images are the same size */
-    height 				:246px; /* Make sure your images are the same size */
-    float 				: left;
-}
-.theme-pascal.slider-wrapper,
-.theme-orman.slider-wrapper {
-    margin-top			:150px;
-}
-
-.clear {
-	clear				:both;
-}
-/*><> ~~ ><> ~~~ ~~ ><> ~ ><> ~~ ><> ~~~ ~~~ ><> ~ SLIDER2  ><> ><> ~~ ~~ ~  ><> <>< ~~ ~ ><> ~ */
+ /*><> ~~ ><> ~~~ ~~ ><> ~ ><> ~~ ><> ~~~ ~~~ ><> ~ SLIDER2  ><> ><> ~~ ~~ ~  ><> <>< ~~ ~ ><> ~ */
 div.slider2{
 	background-image	: url('./images/draw.jpg');
 }
@@ -189,15 +175,13 @@ div.slider2 div.lnews{
 
 .trainer{
 	direction:ltr;
-	
 }
-
 .newsticker ul li{
 	float: left;
 	width: 670px;
 	height: 80px;
 	display: block;
-	font-family: mitra;
+	font-family: 'mitra';
 }
 
 .newsticker li a{
@@ -227,7 +211,7 @@ div.slider2 div.lnews{
 	margin-top:30px;
 }
 .prev:hover{
-	background-image: url('images/bluearrow2hover.png');
+	background-image: url('images/bluearrow2hover.png');	
 }
 .next{
 	width				: 20px;
@@ -239,99 +223,7 @@ div.slider2 div.lnews{
 	margin-top:30px;
 }
 .next:hover{
-	background-image: url('images/bluearrow2hover.png');
-	
-}
-/*><> ~~ ~ ><> ><> ~~ ~~~ ><> ~~ ~ ><> ~~~SLIDER3 ><> ~~~ ><> ~~ ~ ><> ~~><> <>< ~~~ ~ */
-div.slidefloors{
-	margin 				: 0 auto;
-	height 				: 240px;
-}
-div.slider3{
-	direction: ltr;
-	position 			: relative;
-	height 				: 230px;
-	width				: 878px;
-	margin-top			: 17px;
-}
-div.slider3 div.arrow1{
-	background-image	: url('images/arrows.png');
-	background-repeat	: no-repeat;
-	position 			: absolute;
-	width				: 34px;
-	height 				: 63px;
-	background-position	: -34px -2px;
-	right 				: -60px;
-	margin-top			: 80px;
-	cursor: pointer;
-}
-div.slider3 div.arrow1:hover{
-	background-image: url('images/Untitled-2.png');
-}
-div.slider3 div.arrow2{
-	background-image	: url('images/arrows.png');
-	background-repeat	: no-repeat;
-	position 			: absolute;
-	width				: 34px;
-	height 				: 63px;
-	left 				: -60px;
-	margin-top			: 80px;
-	cursor: pointer;
-}
-div.slider3 div.arrow2:hover{
-	background-image: url('images/Untitled-2.png');
-}
-div.slider3 ul li{
-	float				:left;
-	/*margin-left			:23px;*/
-	width				:200px;
-	height 				:220px;
-	background-image	: url('images/shadow4.png');
-	box-shadow 			: 0px 0px 9px #ccc,0 5px 10px -3px #BBB;
-	margin 				: 10px 10px;
-}
-div.slider3 ul li img{
-	float				:right;
-}
-div.slidefloors ul li div.li1div1,
-div.slidefloors ul li div.li2div1,
-div.slidefloors ul li div.li3div1,
-div.slidefloors ul li div.li4div1{
-	background-color	:#e4e4e4;
-	height 				:40px;
-	width				:200px;
-	float				:left;
-}
-div.slidefloors ul li div.li1div2,
-div.slidefloors ul li div.li2div2,
-div.slidefloors ul li div.li3div2,
-div.slidefloors ul li div.li4div2{
-	background-color	:#fff;
-	height 				:50px;
-	width				:200px;
-	float				:left;
-	box-shadow			: 0px 1px 10px #ccc;
-}
-ul li div.li1div1 p,
-ul li div.li2div1 p,
-ul li div.li3div1 p,
-ul li div.li4div1 p{
-	color 				:#82ac54;
-	font-family			:'yekan';
-	font-size			:17px;
-	text-align			:center;
-	line-height			:41px; 
-	text-shadow			:1px 1px #fff;
-}
-ul li div.li1div2 p,
-ul li div.li2div2 p,
-ul li div.li3div2 p,
-ul li div.li4div2 p{
-	color 				:#787878;
-	font-size			:17px;
-	font-family			:'yekan';
-	text-align			:center;
-	line-height			:51px; 
+	background-image: url('images/bluearrow2hover.png');	
 }
 /*><> ~~ ><> ~~ ~~~ ~ ><> <>< ~~~ ~ ><> ~ ~ ><> ~~~ BODY~~~ ><> ><> ~~~ ~~ ~~ ><> <>< ~~ ><> ><> ~~*/
 
@@ -343,7 +235,7 @@ div.backimg{
 	background-image	: url('images/bmslider.png');
 	background-repeat	: no-repeat;
 	width				: 100%;
-	height 				: 744px;
+	height 				: 738px;
 	position 			: absolute;
 	z-index				: 0;
 	background-position	: center top;
@@ -367,7 +259,7 @@ div.shadow2{
 	height 				: 59px;
 	position 			: absolute;
 	z-index				: 0;
-	bottom 				: -33px;
+	bottom 				: -39px;
 	left 				: 205px;
 }
 div.container{
@@ -379,76 +271,223 @@ div.container{
 	position 			: relative;
 	z-index				: 1;
 }
-div.container div#wrapper{
-	height 				: 380px;
-}
-div.container div.maintext{
-	width				: 878px;
-	height 				: 267px;
-	background-color 	: #f8f8f8;
-	position 			:relative;
-}
-div.container div.maintext div.text{
-	float				: left;
-	margin-left			:40px;
+
+div.text{
+	margin-right		: auto;
+	margin-left			:auto;
 	width				: 610px;
 	height 				: 267px;
-	margin-top			: 25px;
+	margin-top			: 36px;
 	text-align			:justify;
 }
-div.container div.maintext div.text p{
+ div.text p{
 	font-family			:'mitra';
-	font-size			:16px;
+	font-size			:17.5px;
 	color 				:#575757;
 	line-height			:25px; 
 }
 div.text span.greentext{
 	color 				:#9ab57d;
 }
-div.container div.maintext div.rightlinks{
-	margin-left			: auto;
-	height 				: 267px;
-	width				:200px;
+
+div.hpicture{
+	background-image: url('images/mimage.jpg');
+	background-repeat: no-repeat;
+	height: 157px;
 }
-div.maintext div.rightlinks li{
-	list-style-type		: none;
+/*div.hpicture div.opc{
+	width: 44px;
+	height: 44px;
+	opacity: 0.8;
 }
-div.rightlinks div.modern-hoshmand{
-	background-image	: url('images/oxin_logo.png');
-	width				:137px;
-	height 				:68px;
-	padding 			: 1px;
-	float				:left;
-	margin-top			: 25px;
+div.hpicture p.op2{
+	display: block;
+}*/
+
+div.container div.maint{
+	background-color: #fff;
+	height: 760px; 
+	position: relative;
 }
-div.rightlinks div.modern-hoshmand p{
-	display				: block;
-	margin-top			:70px;
-	margin-right		: 9px;
-	font-family			:'yekan';
-	color 				: #909090;
-	font-size			:20px;
+div.maint div.sidebar{
+	width: 494px;
+	height: 650px;
+	float: left;
 }
-div.rightlinks li:first-child{
-	float				: left;
-	margin-top			: 50px;
+div.maint div.sidebar h1{
+	font-family: 'yekan';
+	font-size: 21px;
+	float: right;
+	color: #56abd2;
+	width: 100%;
+	margin-top: 74px;
+	text-align: right;
 }
-div.rightlinks li{
-	float				: left;
-	margin-top			: 7px;
+div.maint div.sidebar p{
+	text-align: justify;
+   	line-height: 40px;
+    color: #9b9b9b;
+    font-family: 'yekan';
+    font-size: 14.5px;
 }
-div.rightlinks li a{
-	display				: block;
-	width				: 138px;
-	height 				: 25px;
-	background-color	: #adca8e;
-	text-align			: center;
-	color 				: #fff;
-	font-family			:'yekan';
-	font-size			:17px;
-	padding-top 		: 10px;
+div.maint form{
+	margin-top: 45px;
+	float: right;
 }
-div.rightlinks li a:hover{
+div.maint form input{
+	float: right;
+    border: 1px solid #8f8f8f;
+    width: 272px;
+    height: 32px;
+    border-radius: 5px;
+    padding:0 10px;
+    overflow: hidden;
+    color: #888;
+    font-size: 12px;
+    font-family: 'tahoma'
+}
+div.maint div.googlemap{
+	float: left;
+	height: 650px;
+	width: 382px;
+	margin-top: 74px;
+}
+div.maint div.googlemap iframe{
+	width: 306px;
+    height: 255px;
+    border: 2px solid #e7e7e7;
+    margin-left: 33px;
+}
+div.googlemap div.add{
+	 width: 382px;
+    height: 300px;
+    margin-top: 51px;
+}
+div.add p.add1{
+	margin-left: 43px;
+    font-family: 'yekan';
+    font-size: 16px;
+    color: #9a9a9a;
+}
+div.add p.phonenum{
+	margin-left: 74px;
+    font-family: 'yekan';
+    font-size: 16.5px;
+    color: #848484;
+    margin-top: 20px;
+}
+div.add p.inform{
+	font-family: 'yekan';
+    margin-left: 116px;
+    font-size: 16.5px;
+    color: #848484;
+    margin-top: 20px;
+}
+div.maint form input:focus,
+div.maint form textarea:focus{
+	border: 1px solid #a6c189;
+}
+div.maint form input#number,
+div.maint form input#email{
+	margin-top: 22px;
+}
+div.maint form textarea{
+	margin-top: 28px;
+	float: right;
+	overflow: hidden;
+	width: 404px;
+    height: 112px;
+    padding: 17px 20px;
+    font-family: 'tahoma';
+    font-size:12px;
+}
+div.maint form button.send{
+	margin-top: 35px;
+	float: right;
+	width: 138px;
+    height: 34px;
+    background-color: #a6c189;
+    color: #fff;
+    font-family: 'yekan';
+    font-size: 17.5px;
+    cursor: pointer;
+    border: none;
+}
+div.maint form button.send:hover{
+	background-color:#90AD70;
+}
+div.maint form button.send:hover{
+	top:3px;
+}
+
+div.maint div.floorinfo1{
+	min-height: 372px;
+}
+div.floorinfo1 div.fi1{
+	height: 98px;
+	padding: 1px;
+}
+div.floorinfo1 div.fpic{
+	min-height: 272px;
+}
+div.fpic div.bpic{
+	float: left;
+	width: 459px;
+	height: 234px;
+	margin-left: 82px;
+	margin-top: 29px;
+	border: 5px #D5D5D5 solid;
+	background-image: url('images/interi2.jpg');
+}
+div.fpic div.spic1,
+div.fpic div.spic2{
+	width: 113px;
+	height: 113px;
+	float: left;
+	margin-top: 29px;
+	border-right: #D5D5D5 solid 6px;
+	border-top: #D5D5D5 solid 6px;
+	border-bottom: #D5D5D5 solid 6px;
+	background-image: url('images/interi1.jpg');
+}
+div.fpic div.spic3,
+div.fpic div.spic4{
+	width: 113px;
+	height: 113px;
+	float: left;
+	border-bottom: 6px solid #D5D5D5;
+	border-right: 6px solid #D5D5D5;
+	background-image: url('images/interi1.jpg');
+}
+div.fi1 h1{
+	float: right;
+	color: #56abd2;
+	font-family: 'yekan';
+	font-size: 20px;
+	margin-top: 78px;
+	margin-right: 89px;
+}
+div.fi1 p span{
+	font-size: 21px;
+	font-weight: bold;
+}
+div.fi1 div.plan{
+	margin-top: 65px;
+	margin-left: 88px;
+	width: 138px;
+	height: 34px;
+	float: left;
+}
+div.plan a{
+	text-align: center;
+	background-color: #a6c189;
+	color: #fff;
+	padding: 8px;
+	font-family: 'yekan';
+	font-size: 17px;
+	display: block;	
+}
+div.plan a:hover{
 	background-color: #90AD70;
 }
 div.slider2{
@@ -585,8 +624,8 @@ div.rlnews div.mailbox input.tmtbox{
 	padding 			: 0 10px;
 	text-align			: right;
 	font-size			:12px;
-	font-family			:'tahoma';
-	color 				:#888;   
+	font-family			:'tahoma'; 
+	color 				:#888; 
 }
 div.lb div.usefullink{
 	border-right		: 1px #cccdcb solid;
@@ -688,10 +727,6 @@ footer ul{
 }
 nav{
 	float				:right;
-
-}
-.ie7{
-	width: 700px;
 }
 nav menu{
 	padding 			:0;
@@ -705,7 +740,6 @@ div.blueimg{
 	background-image	: url('images/line-gradient.png');
 	width				: 881px;
 	height 				: 2px;
-	float				: left;
 	margin-left			: auto;
 	margin-right		: auto;
 }
@@ -721,7 +755,7 @@ nav a
 	padding-right		: 20px;
 	color 				: #787878;
 	font-family			:'yekan';
-	font-size			:17px; 
+	font-size			: 17px;
 }
 
 div.last a{
@@ -752,13 +786,10 @@ div.badboy{
 	clear				: both;
 }
 div.top div.shadow5{
-	width				: 458px;
 	height 				: 16px;
 	background-image	: url('images/mshadow.png');
 	background-repeat	: no-repeat;
 	background-position	: center;
-	margin-left			:25%;
-	float: left; 
 }
 /*><> ><> ~~ ~~ ~ ><> ><> ~~~ <>< ~~ ><> FOOTER ><> ><> ~~ ~~~ ~ ><> ><> ~~~ ~ <>< ><> ~~~`*/
 body footer{
